@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light Switch Example</title>
+	<script>
+		function switchLight() {
+			var input = document.getElementById("input").value;
+			var light = document.getElementById("light");
+			if (input == "turn on the light") {
+				light.src = "light-on.png";
+			} else if (input == "turn off the light") {
+				light.src = "light-off.png";
+			}
+		}
+	</script>
+</head>
+<body>
+	<label for="input">Enter command:</label>
+	<input type="text" id="input">
+	<button onclick="switchLight()">Submit</button>
+	<br><br>
+	<img id="light" src="light-off.jpg">
+</body>
+</html>

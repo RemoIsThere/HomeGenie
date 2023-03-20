@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HomeGenie</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<!-- <link rel="stylesheet" href="light1.css"> -->
+
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="home.js"></script>
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+	<a href="desc.html" target="_blank">
+		<div class="head" style="background-color: lightgrey;">
+			<h1 style="color: rgb(87, 76, 2);">HomeGenie <span style="color: rgb(73, 64, 6);">Smart Home Assistant</span></h1>
+		</div>
+	</a>
+	<br><br><br>
+
+
+
+
+
+	<!-- <label for="input">Enter command:</label> -->
+	<div class="content" align="center">
+		<input type="text" class="form-control" id="commandEntered" />
+		<!-- <button onclick="switchLight()">Submit</button> -->
+
+
+
+		<!-- buttons -->
+		<button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="combined()" id="add-command">Submit</button>
+		<button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="startRecognition()" id="commandEntered">Speak</button>
+		<br><br>
+
+
+
+		<!-- graphics -->
+		<img id="light" src="light-off.png">
+		<img id="fan" src="fan-off.png" height="64">
+		<img id="tv" src="tv-off.png" height="64">
+		<img id="cam" src="cam-off.png" height="64">
+	</div>
+
+	<!-- commands -->
+	<a href="command.html" target="_blank" rel="noopener noreferrer">See the datalog here!</a>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+
+</html>
